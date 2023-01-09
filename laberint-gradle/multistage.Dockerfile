@@ -1,6 +1,6 @@
 FROM gradle:jdk11 as builder
-COPY      app /app
 WORKDIR   /app
+COPY      app .
 RUN       gradle build
 
 FROM eclipse-temurin:11

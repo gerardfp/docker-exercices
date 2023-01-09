@@ -1,8 +1,8 @@
 FROM eclipse-temurin:11 as builder
-COPY      . /app
 WORKDIR   /app
+COPY      . .
 RUN       javac -d ./build src/Main.java
-WORKDIR   ./build
+WORKDIR   /app/build
 RUN       jar cfe hellodocker.jar Main Main.class
 
 

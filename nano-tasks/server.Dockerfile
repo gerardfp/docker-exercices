@@ -1,6 +1,6 @@
 FROM gradle:jdk11 AS build
 WORKDIR /app
-COPY ./server .
+COPY server .
 RUN gradle build --no-daemon
 
 FROM eclipse-temurin:11

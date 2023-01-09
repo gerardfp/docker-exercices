@@ -1,6 +1,6 @@
 FROM gradle:jdk19 AS build
 WORKDIR /app
-COPY ./client .
+COPY client .
 RUN gradle build --no-daemon
 
 FROM eclipse-temurin:19
