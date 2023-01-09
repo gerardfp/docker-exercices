@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  hellodocker:
+    image: hellodocker
+    build:
+      context: .
+      dockerfile: multistage.Dockerfile
+    stdin_open: true
+    tty: true
