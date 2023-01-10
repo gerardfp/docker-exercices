@@ -1,9 +1,5 @@
 import com.github.gerardfp.NanoServer;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-
 public class Main {
     public static void main(String[] args) {
         NanoServer
